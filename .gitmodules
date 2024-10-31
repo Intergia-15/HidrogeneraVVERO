@@ -1,0 +1,3 @@
+[submodule "Periferal-Controller-Ino"]
+	path = Periferal-Controller-Ino
+	url = https://github.com/Intergia-10/Periferal-Controller-Ino
