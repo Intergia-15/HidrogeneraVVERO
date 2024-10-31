@@ -1,0 +1,45 @@
+{
+    "ctrl_uid":0,
+    "model":0,
+    "inst_uid":0,
+    "latitude":41.39,
+    "longitude":359.13,
+    "slave":true,
+    "master":true,
+    "internal":true,
+    "sProtocols":[
+        {"enabled":true ,"protocol":"mbTCP",    "port":502      },
+        {"enabled":false,"protocol":"mbRTUs",   "slv_addr":44   },
+        {"enabled":false,"protocol":"mbRTU485", "slv_addr":44   },
+        {"enabled":false,"protocol":"mbRTU232", "slv_addr":44   }
+    ],
+    "mProtocols":[
+        {"enabled":false,"protocol":"mbTCP"     },
+        {"enabled":false,"protocol":"mbRTUs"    },
+        {"enabled":true,"protocol":"mbRTU485"  },
+        {"enabled":false,"protocol":"mbRTU232"  }
+    ],
+    "smbMapFile":"EstacionRecargaMap.csv",
+    "mmbMapFile":"EstacionRecargaSlaves_test.csv",
+    "intFile":"InternalControl",
+    "Ethernet":{
+        "enabled":true,
+        "IP":"192.168.1.111"
+    },
+    "Serial":{
+        "enabled":false,
+        "baudrate":19200,
+        "dataFormat":"8N1"
+    },
+    "RS485":{
+        "enabled":true,
+        "baudrate":115200,
+        "mode":"HALFDUPLEX",
+        "dataFormat":"8N1"
+    },
+    "RS232":{
+        "enabled":false,
+        "baudrate":19200,
+        "dataFormat":"8N1"
+    }
+}

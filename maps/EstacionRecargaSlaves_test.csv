@@ -1,0 +1,5 @@
+﻿PROTOCOL;slv_addr;code;ini_addr;n_addr;master_fwd;storage_index
+mbRTU485;1;15;0;5;1;0
+mbRTU485;1;1;0;5;1;0
+mbRTU485;1;4;0;2;1;58
+mbRTU485;1;1;0;5;1;0

@@ -1,0 +1,52 @@
+﻿REG_TYPE;NAME;S_ADDR;N_ADDR;ACCESS;DATA_FORMAT;SCALE;OFFSET;DEFAULT;UNITS;cN;pN;Fm;FM;UNITS;Im;IM;R;Um;UM;m;n';INFO;
+COIL;VALVE_4;0;1;RW;boolean;1;0;0;[on/off];ECU DO-30;36;;;;;;;;;;;Válvula 4 [panel 1] (permitir paso electrolizador a compresor);
+COIL;ELS_HEAT;1;1;RW;boolean;1;0;0;[on/off];ECU DO-31;37;;;;;;;;;;;Resistencia calefactora electrolizador ELS500;
+COIL;VAR_4_SW;2;1;RW;boolean;1;0;0;[on/off];ECU DO-32;38;;;;;;;;;;;Variador 4 para aireador 1 o 3;Aireador 1 o 3
+COIL;VALVE_7;3;1;RW;boolean;1;0;0;[on/off];ECU DO-33;39;;;;;;;;;;;Válvula 7 [panel 2] (permitir repostaje);
+COIL;H2_EXTR;4;1;RW;boolean;1;0;0;[on/off];ECU DO-34;40;;;;;;;;;;;Extractor de aire;
+COIL;ELS_SW;5;1;RW;boolean;1;0;0;[on/off];ECU DO-35;4;;;;;;;;;;;Electrolizador ELS500;TODO Comprobar dependencias
+COIL;COM_SW;6;1;RW;boolean;1;0;0;[on/off];ECU DO-36;5;;;;;;;;;;;Compresor MV6208;
+COIL;EV_CH;7;1;RW;boolean;1;0;0;[on/off];ECU DO-37;6;;;;;;;;;;;Cargador EV;
+COIL;LM10;8;1;RW;boolean;1;0;0;[on/off];ECU DO-38;41;;;;;;;;;;;Bombilla de estado 10;TODO Revisar función y sacar del registro
+COIL;LM11;9;1;RW;boolean;1;0;0;[on/off];ECU DO-39;42;;;;;;;;;;;Bombilla de estado 11;TODO Revisar función y sacar del registro
+COIL;LM8;10;1;RW;boolean;1;0;0;[on/off];ECU DO-40;43;;;;;;;;;;;Bombilla de estado 8;TODO Revisar función y sacar del registro
+COIL;VALVE_0;11;1;RW;boolean;1;0;0;[on/off];ECU DO-41;44;;;;;;;;;;;Válvula 0 (permitir paso purificador a electrolizador);
+COIL;H2_GEN_SW;12;1;RW;boolean;1;0;0;[on/off];ECU DO-42;45;;;;;;;;;;;Mando de la hidrogenera;
+COIL;ELS_Q_SW;13;1;RW;boolean;1;0;0;[on/off];ECU DO-43;8;;;;;;;;;;;Producción 0 l/h o 500 l/h;NOTE Muy cuestionable TODO Revisar disponibilidad de Aos
+COIL;BOM_1_SW;14;1;RW;boolean;1;0;0;[on/off];ECU DO-44;7;;;;;;;;;;;Bomba 1;TODO Revisar
+COIL;BOM_2_SW;15;1;RW;boolean;1;0;0;[on/off];ECU DO-45;9;;;;;;;;;;;Bomba 2;TODO Revisar
+COIL;VAR_1_SW;16;1;RW;boolean;1;0;0;[on/off];ECU DO-46;46;;;;;;;;;;;Variador 1 para bomba de riego;
+COIL;VAR_2_SW;17;1;RW;boolean;1;0;0;[on/off];ECU DO-47;47;;;;;;;;;;;Variador 2 para bomba de arenero;
+COIL;VAR_3_SW;18;1;RW;boolean;1;0;0;[on/off];ECU DO-48;48;;;;;;;;;;;Variador 3 para aireador 1 o 3;
+COIL;BL_2_SW;19;1;RW;boolean;1;0;0;[on/off];ECU DO-49;49;;;;;;;;;;;Bomba lodos 2;TODO Revisar
+COIL;BL_1_SW;20;1;RW;boolean;1;0;0;[on/off];ECU DO-50;12;;;;;;;;;;;Bomba lodos 1;TODO Revisar
+DISCRETE INPUT;ELS_MED_H2O_LVL;0;1;R;boolean;1;0;;[on/off];ECU DI-50;28;;;;;;;;;;;Nivel medio reserva agua ELS500;
+DISCRETE INPUT;ELS_MAX_H2O_LVL;1;1;R;boolean;1;0;;[on/off];ECU DI-51;27;;;;;;;;;;;Nivel máximo reserva agua ELS501;
+DISCRETE INPUT;;2;1;R;boolean;1;0;;[on/off];ECU DI-52;26;;;;;;;;;;;;TODO Cambiar aquí la mitad del variador 2? REVISAR!!! Conflicto de planos
+DISCRETE INPUT;EV_CH;3;1;R;boolean;1;0;;[on/off];ECU DI-53;25;;;;;;;;;;;EV Charge;TODO ¿Qué es esto?
+DISCRETE INPUT;H2_SUM;4;1;R;boolean;1;0;;[on/off];ECU DI-54;24;;;;;;;;;;;Interruptor suministro de H2;
+DISCRETE INPUT;COM_MAX_P;5;1;R;boolean;1;0;;[on/off];ECU DI-55;23;;;;;;;;;;;Max compressor preasure;
+DISCRETE INPUT;AIREA;6;1;R;boolean;1;0;;[on/off];ECU DI-56;22;;;;;;;;;;;;TODO ¿Qué es esto?
+DISCRETE INPUT;VAR_1_STAT;7;1;R;boolean;1;0;;[on/off];ECU DI-57;18;;;;;;;;;;;Estado de funcionamiento del variador 1;
+DISCRETE INPUT;VAR_1_ERR;8;1;R;boolean;1;0;;[on/off];ECU DI-58;17;;;;;;;;;;;Estado de error del variador 1;
+DISCRETE INPUT;VAR_2_STAT;9;1;R;boolean;1;0;;[on/off];ECU DI-59;50;;;;;;;;;;;Estado de funcionamiento del variador 2;TODO Pisa SPI_SO CAMBIAR!!!
+DISCRETE INPUT;VAR_2_ERR;10;1;R;boolean;1;0;;[on/off];ECU DI-60;51;;;;;;;;;;;Estado de error del variador 2;TODO Pisa SPI_SI CAMBIAR!!!
+DISCRETE INPUT;VAR_3_STAT;11;1;R;boolean;1;0;;[on/off];ECU DI-61;15;;;;;;;;;;;Estado de funcionamiento del variador 3;
+DISCRETE INPUT;VAR_3_ERR;12;1;R;boolean;1;0;;[on/off];ECU DI-62;14;;;;;;;;;;;Estado de error del variador 3;
+DISCRETE INPUT;FILTER_LOW_LVL;13;1;R;boolean;1;0;;[on/off];ECU DI-63;29;;;;;;;;;;;Nivel de arenero bajo;
+DISCRETE INPUT;FILTER_HIGH_LVL;14;1;R;boolean;1;0;;[on/off];ECU DI-64;30;;;;;;;;;;;Nivel de arenero alto;
+DISCRETE INPUT;VAR_4_STAT;15;1;R;boolean;1;0;;[on/off];ECU DI-65;21;;;;;;;;;;;Estado de funcionamiento del variador 4;
+DISCRETE INPUT;VAR_4_ERR;16;1;R;boolean;1;0;;[on/off];ECU DI-66;20;;;;;;;;;;;Estado de error del variador 4;
+INPUT REGISTER;PRES_4;0;1;R;uint16_t;0.01;0;;Bar;ECU AI-20;A0;0;40;Bar;4;0.02;499;0.1996;998;5010.02004;-1000;Presión manométrica entrada Panel 1;
+INPUT REGISTER;PRES_5;1;1;R;uint16_t;0.01;0;;Bar;ECU AI-21;A1;0;40;Bar;4;0.02;499;0.1996;998;5010.02004;-1000;Presión manométrica salida Panel 1;
+INPUT REGISTER;PRES_6;2;1;R;uint16_t;0.01;0;;Bar;ECU AI-22;A2;0;250;Bar;4;0.02;499;0.1996;998;31312.62525;-6250;Presión manométrica entrada Panel 2;
+INPUT REGISTER;PRES_7;3;1;R;uint16_t;0.01;0;;Bar;ECU AI-23;A3;0;250;Bar;4;0.02;499;0.1996;998;31312.62525;-6250;Presión manométrica escape H2 Panel 2;
+INPUT REGISTER;PRES_8;4;1;R;uint16_t;0.01;0;;Bar;ECU AI-24;A4;0;250;Bar;4;0.02;499;0.1996;998;31312.62525;-6250;Presión manométrica salida alamcenamiento Panel 2;
+INPUT REGISTER;ESC_H2;5;1;R;uint16_t;0.01;0;;%LEL;ECU AI-25;A5;0;10;%LEL;4;0.02;499;0.1996;998;1252.50501;-250;Presencia de hidrógeno en sala;TODO Revisar modelo
+INPUT REGISTER;TEMP_H2;6;1;R;uint16_t;0.01;0;;°C;ECU AI-26;A6;0;400;°C;4;0.02;499;0.1996;998;50100.2004;-10000;Temperatura de sala;TODO Revisar modelo
+INPUT REGISTER;CURRENT_F_EV;7;1;R;uint16_t;0.01;0;;Arms;ECU AI-27;A7;0;10;Arms;4;0.02;499;0.1996;998;1252.50501;-250;Corriente de fase en cargador;
+INPUT REGISTER;CURRENT_A_H2;8;1;R;uint16_t;0.01;0;;Arms;ECU AI-28;A8;0;20;Arms;4;0.02;499;0.1996;998;2505.01002;-500;Corriente de fase A en acometida hidrogenera;
+INPUT REGISTER;CURRENT_C_H2;9;1;R;uint16_t;0.01;0;;Arms;ECU AI-29;A9;0;20;Arms;4;0.02;499;0.1996;998;2505.01002;-500;Corriente de fase C en acometida hidrogenera;
+INPUT REGISTER;CURRENT_B_H2;10;1;R;uint16_t;0.01;0;;Arms;ECU AI-30;A10;0;20;Arms;4;0.02;499;0.1996;998;2505.01002;-500;Corriente de fase B en acometida hidrogenera;
+INPUT REGISTER;CURRENT_MISTERY;11;1;R;uint16_t;0.01;0;;Arms;ECU AI-31;A11;0;10;Arms;4;0.02;499;0.1996;998;1252.50501;-250;Corriente misteriosa de hasta 10A;TODO ¿Qué es esto?
+INPUT REGISTER;G_BETA;12;1;R;uint16_t;0.1;0;;W/m2;ECU AI-32;A12;0;1500;W/m2;;;;0;1;1500;0;Piranómetro;TODO Pedir modelo
